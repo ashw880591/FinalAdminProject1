@@ -6,8 +6,8 @@ import { FloorPlanService } from './floorplan.service';
 
 @Component({
   selector: 'app-floor-plans',
-  templateUrl: './floor-plans.component.html',
-  styleUrls: ['./floor-plans.component.css'],
+  templateUrl: './floorplan.component.html',
+  styleUrls: ['./floorplan.component.css'],
   providers:[FloorPlanService]
 })
 export class FloorPlansComponent implements OnInit {

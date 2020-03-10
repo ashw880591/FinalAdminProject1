@@ -1,1 +1,159 @@
-<p>specification works!</p>
+<div id="what-we-do">
+    <div class="container">
+    <div class="card">
+    <form action="" [formGroup]="ProjectSpecification">
+
+        <div class="row">
+            <h3>Site Specifications</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <label for="" class="form-group">Specification 1</label>
+                <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group" formControlName="specification1">
+                <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+                <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+                <div class="validation" *ngIf="ProjectSpecification.controls['specification1'].hasError('required')
+                && (ProjectSpecification.controls['specification1'].touched||ProjectSpecification.controls['specification1'].dirty)">
+                <b>This field is requried</b>
+              </div> 
+            <div class="col-sm-2">
+                <label for="">Specification Icon</label>
+                <input type="file" name="" id="">
+    
+            </div>
+        </div>
+            <div class="col-sm-4">
+                <label for="" class="form-group">Specification 2</label>
+                <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group" formControlName="specification2">
+                <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+                <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+                <div class="validation" *ngIf="ProjectSpecification.controls['specification2'].hasError('required')
+                && (ProjectSpecification.controls['specification2'].touched||ProjectSpecification.controls['specification2'].dirty)">
+                <b>This field is requried</b>
+              </div>
+                <div class="col-sm-2">
+                    <label for="">Specification Icon</label>
+                    <input type="file" name="" id="">
+        
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <label for="" class="form-group">Specification 3</label>
+                <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group" formControlName="specification3">
+                <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+                <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+                <div class="validation" *ngIf="ProjectSpecification.controls['specification3'].hasError('required')
+                && (ProjectSpecification.controls['specification3'].touched||ProjectSpecification.controls['specification3'].dirty)">
+                <b>This field is requried</b>
+              </div>
+                <div class="col-sm-2">
+                    <label for="">Specification Icon</label>
+                    <input type="file" name="" id="">
+        
+                </div>
+            </div>
+           
+        </div>
+       <br><br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <label for="" class="form-group">Specification 4</label>
+                <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group" formControlName="specification4">
+                <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+                <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+                <div class="validation" *ngIf="ProjectSpecification.controls['specification4'].hasError('required')
+                && (ProjectSpecification.controls['specification4'].touched||ProjectSpecification.controls['specification4'].dirty)">
+                <b>This field is requried</b>
+              </div>
+            <div class="col-sm-2">
+                <label for="">Specification Icon</label>
+                <input type="file" name="" id="">
+    
+            </div>
+        </div>
+            <div class="col-sm-4">
+                <label for="" class="form-group">Specification 5</label>
+                <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group" formControlName="specification5">
+                <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+                <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+                <div class="validation" *ngIf="ProjectSpecification.controls['specification5'].hasError('required')
+                && (ProjectSpecification.controls['specification5'].touched||ProjectSpecification.controls['specification5'].dirty)">
+                <b>This field is requried</b>
+              </div>
+                <div class="col-sm-2">
+                    <label for="">Specification Icon</label>
+                    <input type="file" name="" id="">
+        
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <label for="" class="form-group">Specification 6</label>
+                <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group" formControlName="specification6">
+                <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+                <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+                <div class="validation" *ngIf="ProjectSpecification.controls['specification6'].hasError('required')
+                && (ProjectSpecification.controls['specification6'].touched||ProjectSpecification.controls['specification6'].dirty)">
+                <b>This field is requried</b>
+              </div>
+                <div class="col-sm-2">
+                    <label for="">Specification Icon</label>
+                    <input type="file" name="" id="">
+        
+                </div>
+            </div>
+           
+        </div>
+        <div class="">
+            <button type="submit" class="btn btn-warning" style="margin-left: 1%; margin-top: 50px;"(click)="GoBackToFloorPlanPage()">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                <b> PREVIOUS</b></button>
+                <button type="submit" class="btn btn-success" style="margin-left: 77%;"(click)="saveAction(ProjectSpecification.value)"><b> SAVE & NEXT</b>&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+
+        </div>
+    </form>
+    </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="row">
+    <div class="col-sm-4">
+        <label for="" class="form-group">Specification 4</label>
+        <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group">
+        <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+        <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+        <div class="col-sm-2">
+            <label for="">Specification Icon</label>
+            <input type="file" name="" id="">
+
+        </div><br>
+    </div>
+
+    <div class="col-sm-4">
+        <label for="" class="form-group">Specification 5</label>
+        <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group">
+        <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+
+        <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+        <div class="col-sm-2">
+            <label for="">Specification Icon</label>
+            <input type="file" name="" id="">
+
+        </div>
+    </div><br>
+    <div class="col-sm-4">
+        <label for="" class="form-group">Specification 6</label>
+        <input type="text" name="" id="" placeholder="Enter Specification 1" class="form-control form-group">
+        <input type="text" name="" id="" placeholder="Enter Specification 2" class="form-control form-group">
+        <input type="text" name="" id="" placeholder="Enter Specification 3" class="form-control form-group">
+    </div>
+    <div class="col-sm-2">
+        <label for="">Specification Icon</label>
+        <input type="file" name="" id="">
+
+    </div>
+</div> -->

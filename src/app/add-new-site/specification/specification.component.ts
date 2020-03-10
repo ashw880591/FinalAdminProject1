@@ -5,8 +5,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-specifications',
-  templateUrl: './specifications.component.html',
-  styleUrls: ['./specifications.component.css'],
+  templateUrl: './specification.component.html',
+  styleUrls: ['./specification.component.css'],
   providers:[SpecificationService]
 })
 export class SpecificationsComponent implements OnInit {

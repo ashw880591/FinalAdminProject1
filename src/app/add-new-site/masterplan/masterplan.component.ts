@@ -5,8 +5,8 @@ import { MasterPlanService } from './master.service';
 
 @Component({
   selector: 'app-master-plan',
-  templateUrl: './master-plan.component.html',
-  styleUrls: ['./master-plan.component.css'],
+  templateUrl: './masterplan.component.html',
+  styleUrls: ['./masterplan.component.css'],
   providers:[MasterPlanService]
 })
 export class MasterPlanComponent implements OnInit {

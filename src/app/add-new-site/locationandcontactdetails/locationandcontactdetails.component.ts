@@ -5,8 +5,8 @@ import { LoactionAndContactDetailsService } from './locationandcontactdetails.se
 
 @Component({
   selector: 'app-location-and-contact',
-  templateUrl: './location-and-contact.component.html',
-  styleUrls: ['./location-and-contact.component.css'],
+  templateUrl: './locationandcontactdetails.component.html',
+  styleUrls: ['./locationandcontactdetails.component.css'],
   providers:[LoactionAndContactDetailsService]
 })
 export class LocationAndContactComponent implements OnInit {

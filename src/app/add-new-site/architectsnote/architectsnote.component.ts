@@ -5,8 +5,8 @@ import { ArchitectsService } from './architectsnote.service';
 
 @Component({
   selector: 'app-architects-note',
-  templateUrl: './architects-note.component.html',
-  styleUrls: ['./architects-note.component.css'],
+  templateUrl: './architectsnote.component.html',
+  styleUrls: ['./architectsnote.component.css'],
   providers:[ArchitectsService]
 })
 export class ArchitectsNoteComponent implements OnInit {
