@@ -1,0 +1,257 @@
+<!-- <div class="jumbotron container-fliud image">
+
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-xs-4"></div>
+      <div class="col-sm-4 col-md-4 col-xs-4">
+        <form [formGroup]="RegistrationForm">
+  
+          <div class="card image1">
+            <div class="card-body">
+              <h1 style="color: white">Main Slider</h1>
+  
+              <div class="form-group input-group-lg">
+                <label for="tagline"></label>
+                <input type="text" id="tagline" class="form-control" placeholder="tagline" formControlName="tagline">
+              </div>
+              <div class="form-group input-group-lg" style="margin-top: 40px;">
+                <div class="col-sm-5"></div>
+                <select id="category" class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
+                  placeholder="select category" formControlName="category">
+                  <option value="">Select Service Type</option>
+                  <option value="washing">wash</option>
+                  <option value="maintenance">Maintenance</option>
+                  <option value="wash">Wash/Maintenance</option>
+                  <option value="others">Other</option>
+                  <option value="cancel">Cancel</option>
+                </select>
+  
+  
+              </div>
+  
+  
+  
+              <div class="form-group input-group-lg" style="margin-top: 40px;">
+                <div class="col-sm-5"></div>
+                <select id="inputState" class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
+                  placeholder="project name" formControlName="projectname">
+                  <option value="">Select Service Type</option>
+                  <option value="washing">wash</option>
+  
+                  <option value="maintenance">Maintenance</option>
+                  <option value="wash">Wash/Maintenance</option>
+                  <option value="others">Other</option>
+                  <option value="cancel">Cancel</option>
+                </select>
+              </div>
+              <div class="form-group input-group-lg" style="margin-top: 40px;">
+                <div class="col-sm-5"></div>
+                <textarea class=" alert form-rounded form-control col-sm-12" rows="2" id="comment"
+                  placeholder="description1" formControlName="description1"></textarea>
+  
+              </div>
+              <div class="form-group input-group-lg" style="margin-top: 40px;">
+                <div class="col-sm-5"></div>
+                <textarea class=" alert form-rounded form-control col-sm-12" rows="2" id="comment"
+                  placeholder="description2" formControlName="description2"></textarea>
+  
+              </div>
+  
+              <div class="">
+                <label><input type="checkbox" formControlName="enquiry"> Enquery</label>
+  
+              </div>
+  
+  
+             
+  
+  
+  
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div class="button_group">
+                  <button type="submit" class="btn  btn-sm btn-success" style="margin-right: 25px"
+                    (click)="saveAction(RegistrationForm.value)">submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-4 col-md-4 col-xs-4"></div>
+    </div>
+  </div> -->
+
+
+
+
+<div class="container">
+  <form action="">
+    <h1 style="color: red;">Main Slider Projects</h1>
+    <button type="submit" class="btn btn-success" style="float: right;" data-toggle="modal" data-target="#myModal">Add
+      Slider Project</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="jumbotron container-fliud image">
+
+            <div class="row">
+              <!-- <div class="col-sm-4 col-md-4 col-xs-4"></div> -->
+              <div class="col-sm-4 col-md-4 col-xs-4">
+                <form [formGroup]="RegistrationForm">
+
+                  <div class="card image1">
+                    <div class="card-body">
+                      <h1 style="color: white">Main Slider</h1>
+
+                      <div class="form-group input-group-lg">
+                        <label for="tagline"></label>
+                        <input type="text" id="tagline" class="form-control" placeholder="tagline"
+                          formControlName="tagline">
+                      </div>
+                      <div class="form-group input-group-lg" style="margin-top: 40px;">
+                        <div class="col-sm-5"></div>
+                        <select id="category"
+                          class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
+                          placeholder="select category" formControlName="category">
+                          <option value="">Select Service Type</option>
+                          <option value="washing">wash</option>
+                          <option value="maintenance">Maintenance</option>
+                          <option value="wash">Wash/Maintenance</option>
+                          <option value="others">Other</option>
+                          <option value="cancel">Cancel</option>
+                        </select>
+
+
+                      </div>
+
+
+
+                      <div class="form-group input-group-lg" style="margin-top: 40px;">
+                        <div class="col-sm-5"></div>
+                        <select id="inputState"
+                          class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
+                          placeholder="project name" formControlName="projectname">
+                          <option value="">Select Service Type</option>
+                          <option value="washing">wash</option>
+
+                          <option value="maintenance">Maintenance</option>
+                          <option value="wash">Wash/Maintenance</option>
+                          <option value="others">Other</option>
+                          <option value="cancel">Cancel</option>
+                        </select>
+                      </div>
+                      <div class="form-group input-group-lg" style="margin-top: 40px;">
+                        <div class="col-sm-5"></div>
+                        <textarea class=" alert form-rounded form-control col-sm-12" rows="2" id="comment"
+                          placeholder="description1" formControlName="description1"></textarea>
+
+                      </div>
+                      <div class="form-group input-group-lg" style="margin-top: 40px;">
+                        <div class="col-sm-5"></div>
+                        <textarea class=" alert form-rounded form-control col-sm-12" rows="2" id="comment"
+                          placeholder="description2" formControlName="description2"></textarea>
+
+                      </div>
+
+                      <div class="">
+                        <label><input type="checkbox" formControlName="enquiry"> Enquery</label>
+
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="button_group">
+                          <button type="submit" class="btn  btn-sm btn-success" style="margin-right: 25px"
+                            (click)="saveAction(RegistrationForm.value)">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div> -->
+              <!-- <div class="col-sm-4 col-md-4 col-xs-4"></div> -->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <table class="table table-hover table-dark  table-striped image mytable"
+      style="margin-top:80px;margin-left:15px;margin-bottom:600px">
+      <tr>
+        <th>Sr.No</th>
+        <th>Tagline</th>
+        <th>Category</th>
+        <th>Project Name</th>
+        <th>Enquiry</th>
+        <th>Description 1</th>
+        <th>Description 2</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Test Tagline</td>
+        <td>Residentials</td>
+        <td>Project Name1</td>
+        <td>Yes</td>
+        <td>Test Description 1</td>
+        <td>Test Description 2</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Test Tagline</td>
+        <td>Residentials</td>
+        <td>Project Name1</td>
+        <td>Yes</td>
+        <td>Test Description 1</td>
+        <td>Test Description 2</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Test Tagline</td>
+        <td>Residentials</td>
+        <td>Project Name1</td>
+        <td>Yes</td>
+        <td>Test Description 1</td>
+        <td>Test Description 2</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Test Tagline</td>
+        <td>Residentials</td>
+        <td>Project Name1</td>
+        <td>Yes</td>
+        <td>Test Description 1</td>
+        <td>Test Description 2</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Test Tagline</td>
+        <td>Residentials</td>
+        <td>Project Name1</td>
+        <td>Yes</td>
+        <td>Test Description 1</td>
+        <td>Test Description 2</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+    </table>
+  </form>
+
+</div>
