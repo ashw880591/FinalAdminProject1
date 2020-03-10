@@ -1,0 +1,58 @@
+<div id="what-we-do">
+    <div class="container">
+        <div class="card">
+    
+        <form action="" [formGroup]="ProjectOverview">
+            <div class=" row">
+                <h3>Site Overview Details</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="" class="form-group">Header Line 1</label>
+                    <input type="text" name="" id="" placeholder="Enter Header Line 1" class="form-control form-group" formControlName="header_line1" >
+                    <div class="validation" *ngIf="ProjectOverview.controls['header_line1'].hasError('required')
+                    && (ProjectOverview.controls['header_line1'].touched||ProjectOverview.controls['header_line1'].dirty)">
+                    <b>This field is requried</b>
+                  </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="" class="form-group">Header Line 2</label>
+                    <input type="text" name="" id="" placeholder="Enter Header Line 2" class="form-control form-group"formControlName="header_line2" >
+                    <div class="validation" *ngIf="ProjectOverview.controls['header_line2'].hasError('required')
+                    && (ProjectOverview.controls['header_line2'].touched||ProjectOverview.controls['header_line2'].dirty)">
+                    <b>This field is requried</b>
+                  </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <label for="" class="form-group">Description</label>
+                </div>
+                <div class="col-md-12" style="margin-top: 20px;">
+                    <fieldset>
+                      <textarea name="message" rows="4" class="form-control" id="message"
+                         required formControlName="description"></textarea>
+                    </fieldset><br>
+                    <div class="validation" *ngIf="ProjectOverview.controls['description'].hasError('required')
+                    && (ProjectOverview.controls['description'].touched||ProjectOverview.controls['description'].dirty)">
+                    <b>This Field is requried</b>
+                </div>
+                  </div>
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-warning" (click)="GoBackToTitlePage()"  style="margin-left: 1%;">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    <b> PREVIOUS</b></button>
+            
+                        <button type="submit"   class="btn btn-success" style="margin-left: 77%;"  (click)="saveAction(ProjectOverview.value)"><b> SAVE & NEXT</b> &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+            </div>
+        </form>
+        
+       
+    </div>
+    </div>
+    </div> 
+    

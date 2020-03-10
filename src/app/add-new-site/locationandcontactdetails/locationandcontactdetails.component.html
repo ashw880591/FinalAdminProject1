@@ -1,0 +1,134 @@
+
+<div  id="what-we-do">
+    <div class="container">
+        <form action="" [formGroup]="ProjectLocation">
+    <div class="card">
+            <div class="row">
+                <h3>Site Loaction & Conatct Details</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="" class="form-group">Address Line</label>
+                    <input type="text" name="" id="" placeholder="Enter Site Address, Location Details,City,State,Pin Code"
+                        class="form-control form-group" formControlName="address_line">
+                        <div class="validation" *ngIf="ProjectLocation.controls['address_line'].hasError('required')
+                        && (ProjectLocation.controls['address_line'].touched||ProjectLocation.controls['address_line'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Airport</label>
+                    <input type="text" name="" id="" placeholder="Enter Airport Name & Distance in KM"
+                        class="form-control form-group" formControlName="airport">
+                        <div class="validation" *ngIf="ProjectLocation.controls['airport'].hasError('required')
+                        && (ProjectLocation.controls['airport'].touched||ProjectLocation.controls['airport'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Hospitals</label>
+                    <input type="text" name="" id="" placeholder="Enter Hospital Name & Distance in KM "
+                        class="form-control form-group" formControlName="hospitals">
+                        <div class="validation" *ngIf="ProjectLocation.controls['hospitals'].hasError('required')
+                        && (ProjectLocation.controls['hospitals'].touched||ProjectLocation.controls['hospitals'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                </div>
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Movie Theater</label>
+                    <input type="text" name="" id="" placeholder="Enter Movie Theater Name & Distance in KM"
+                        class="form-control form-group"formControlName="movie_theater">
+                        <div class="validation" *ngIf="ProjectLocation.controls['movie_theater'].hasError('required')
+                        && (ProjectLocation.controls['movie_theater'].touched||ProjectLocation.controls['movie_theater'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Bus Stop</label>
+                    <input type="text" name="" id="" placeholder="Enter Bus Stop Name & Distance in KM"
+                        class="form-control form-group"formControlName="bus_stop">
+                        <div class="validation" *ngIf="ProjectLocation.controls['bus_stop'].hasError('required')
+                        && (ProjectLocation.controls['bus_stop'].touched||ProjectLocation.controls['bus_stop'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Petrol Pumps</label>
+                    <input type="text" name="" id="" placeholder="Enter Petrol Pump Name & Distance in KM "
+                        class="form-control form-group"formControlName="petrol_pumps">
+                        <div class="validation" *ngIf="ProjectLocation.controls['petrol_pumps'].hasError('required')
+                        && (ProjectLocation.controls['petrol_pumps'].touched||ProjectLocation.controls['petrol_pumps'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Shopping Mall</label>
+                    <input type="text" name="" id="" placeholder="Enter Shopping Mall Name & Distance in KM "
+                        class="form-control form-group"formControlName="shopping_mall">
+                        <div class="validation" *ngIf="ProjectLocation.controls['shopping_mall'].hasError('required')
+                        && (ProjectLocation.controls['shopping_mall'].touched||ProjectLocation.controls['shopping_mall'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Railway Station</label>
+                    <input type="text" name="" id="" placeholder="Enter Railway Station Name & Distance in KM"
+                        class="form-control form-group"formControlName="railway_station">
+                        <div class="validation" *ngIf="ProjectLocation.controls['railway_station'].hasError('required')
+                        && (ProjectLocation.controls['railway_station'].touched||ProjectLocation.controls['railway_station'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Bank's & ATM's</label>
+                    <input type="text" name="" id="" placeholder="Enter Bank's & ATM's Name & Distance in KM"
+                        class="form-control form-group"formControlName="banks_and_atms">
+                        <div class="validation" *ngIf="ProjectLocation.controls['banks_and_atms'].hasError('required')
+                        && (ProjectLocation.controls['banks_and_atms'].touched||ProjectLocation.controls['banks_and_atms'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+                <div class="col-sm-4">
+                    <label for="" class="form-group">Groceries</label>
+                    <input type="text" name="" id="" placeholder="Enter Groceries Shops Name & Distance in KM"
+                        class="form-control form-group"formControlName="groceries">
+                        <div class="validation" *ngIf="ProjectLocation.controls['groceries'].hasError('required')
+                        && (ProjectLocation.controls['groceries'].touched||ProjectLocation.controls['groceries'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <label for="" class="form-group">School & Collages</label>
+                    <input type="text" name="" id="" placeholder="Enter School Name & Distance in KM "
+                        class="form-control form-group"formControlName="schools_and_colleges">
+                        <div class="validation" *ngIf="ProjectLocation.controls['schools_and_colleges'].hasError('required')
+                        && (ProjectLocation.controls['schools_and_colleges'].touched||ProjectLocation.controls['schools_and_colleges'].dirty)">
+                        <b>This field is requried</b>
+                      </div> 
+                    </div>
+                <!-- <div class="col-sm-4"></div> -->
+            </div>
+    
+    
+    
+            
+            <div class="">
+                <button type="submit" class="btn btn-warning" style="margin-left: 1%;" (click)="GoBackToLoactionPage()">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                 <b> PREVIOUS</b></button>
+            
+                        <button type="submit" class="btn btn-success" style="margin-left: 77%;" (click)="saveAction(ProjectLocation.value)"><b> SAVE & NEXT</b>&nbsp; <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+    </div>
+        </form>
+       </div>
+    </div>

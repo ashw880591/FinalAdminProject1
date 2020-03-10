@@ -1,5 +1,4 @@
-<!-- <div class="jumbotron container-fliud image">
-
+<!-- 
     <div class="row">
       <div class="col-sm-4 col-md-4 col-xs-4"></div>
       <div class="col-sm-4 col-md-4 col-xs-4">
@@ -61,11 +60,6 @@
   
               </div>
   
-  
-             
-  
-  
-  
               <div class="row">
                 <div class="col-md-4"></div>
                 <div class="button_group">
@@ -79,179 +73,183 @@
       </div>
       <div class="col-sm-4 col-md-4 col-xs-4"></div>
     </div>
-  </div> -->
+  
 
+ -->
 
-
-
-<div class="container">
-  <form action="">
-    <h1 style="color: red;">Main Slider Projects</h1>
-    <button type="submit" class="btn btn-success" style="float: right;" data-toggle="modal" data-target="#myModal">Add
-      Slider Project</button>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="row">
-          <div class="col-sm-3"></div>
-          <div class="jumbotron container-fliud image">
-
-            <div class="row">
-              <!-- <div class="col-sm-4 col-md-4 col-xs-4"></div> -->
-              <div class="col-sm-4 col-md-4 col-xs-4">
-                <form [formGroup]="RegistrationForm">
-
-                  <div class="card image1">
-                    <div class="card-body">
-                      <h1 style="color: white">Main Slider</h1>
-
-                      <div class="form-group input-group-lg">
-                        <label for="tagline"></label>
-                        <input type="text" id="tagline" class="form-control" placeholder="tagline"
-                          formControlName="tagline">
+ <div class="container" id="what-we-do">
+  <form action="" [formGroup]="RegistrationForm">
+    <h1 style="color: white;">Main Slider Projects</h1>
+    <button type="submit" class="btn btn-success" style="margin-left: 80%;" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i>Add Slider Project</button>
+    <div class="modal fade" id="myModal" role="dialog" style="margin-top: 90px;">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-md-10">
+              <div class="row" style="margin-top: 80px;">
+                <div id="what-we-do">
+                  <form id="what-we-do" action="" method="post" [formGroup]="RegistrationForm">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="tagline" type="text" class="form-control" id="tagline" placeholder=" Enter Tagline..."
+                          required formControlName="tagline">
+                          <div class="validation" *ngIf="RegistrationForm.controls['tagline'].hasError('required')
+                          && (RegistrationForm.controls['tagline'].touched||RegistrationForm.controls['tagline'].dirty)">
+                          <b>This Field is requried</b>
                       </div>
-                      <div class="form-group input-group-lg" style="margin-top: 40px;">
-                        <div class="col-sm-5"></div>
-                        <select id="category"
-                          class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
-                          placeholder="select category" formControlName="category">
-                          <option value="">Select Service Type</option>
-                          <option value="washing">wash</option>
-                          <option value="maintenance">Maintenance</option>
-                          <option value="wash">Wash/Maintenance</option>
-                          <option value="others">Other</option>
-                          <option value="cancel">Cancel</option>
-                        </select>
+                     
+                      </fieldset><br>
+                    </div>
+                    <div class="col-sm-6">
+                      <fieldset>
 
-
-                      </div>
-
-
-
-                      <div class="form-group input-group-lg" style="margin-top: 40px;">
-                        <div class="col-sm-5"></div>
-                        <select id="inputState"
-                          class=" alert form-rounded form-control myinputcss col-sm-12 form-control-lg"
-                          placeholder="project name" formControlName="projectname">
-                          <option value="">Select Service Type</option>
-                          <option value="washing">wash</option>
-
-                          <option value="maintenance">Maintenance</option>
-                          <option value="wash">Wash/Maintenance</option>
-                          <option value="others">Other</option>
-                          <option value="cancel">Cancel</option>
-                        </select>
-                      </div>
-                      <div class="form-group input-group-lg" style="margin-top: 40px;">
-                        <div class="col-sm-5"></div>
-                        <textarea class=" alert form-rounded form-control col-sm-12" rows="2" id="comment"
-                          placeholder="description1" formControlName="description1"></textarea>
-
-                      </div>
-                      <div class="form-group input-group-lg" style="margin-top: 40px;">
-                        <div class="col-sm-5"></div>
-                        <textarea class=" alert form-rounded form-control col-sm-12" rows="2" id="comment"
-                          placeholder="description2" formControlName="description2"></textarea>
-
-                      </div>
-
-                      <div class="">
-                        <label><input type="checkbox" formControlName="enquiry"> Enquery</label>
-
-                      </div>
-
-
-                      <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="button_group">
-                          <button type="submit" class="btn  btn-sm btn-success" style="margin-right: 25px"
-                            (click)="saveAction(RegistrationForm.value)">submit</button>
-                        </div>
+                      <input type="file" name="" id="" placeholder="Enter Architect Name" class="form-control form-group" >
+                    </fieldset><br>
+                  </div>
+                    <div class="col-sm-6">
+                      <select id="category" class="form-rounded form-control myinputcss col-sm-12 "
+                        placeholder="select project" formControlName="category">
+                        <option value="">Select Category</option>
+                        <option value="washing">wash</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="wash">Wash/Maintenance</option>
+                        <option value="others">Other</option>
+                        <option value="cancel">Cancel</option>
+                      </select>
+                      <div class="validation" *ngIf="RegistrationForm.controls['category'].hasError('required')
+                      && (RegistrationForm.controls['category'].touched||RegistrationForm.controls['category'].dirty)">
+                      <b>This Field is requried</b>
+                  </div>
+                  <div class="validation" *ngIf="RegistrationForm.controls['category'].hasError('pattern')">
+                      <b>Invalid contact number</b>
+                  </div> 
+                    </div>
+                    <div class="col-sm-6">
+                      <select id="project_name" class="form-rounded form-control myinputcss col-sm-12 "
+                        placeholder="select project" formControlName="project_name">
+                        <option value="">Select Project</option>
+                        <option value="washing">wash</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="wash">Wash/Maintenance</option>
+                        <option value="others">Other</option>
+                        <option value="cancel">Cancel</option>
+                      </select>
+                      <div class="validation" *ngIf="RegistrationForm.controls['project_name'].hasError('required')
+                      && (RegistrationForm.controls['project_name'].touched||RegistrationForm.controls['project_name'].dirty)">
+                      <b>This Field is requried</b>
+                  </div>
+                 
+                    </div>
+                    <div class="col-md-12" style="margin-top: 20px;">
+                      <fieldset>
+                        <textarea name="message" rows="1" class="form-control" id="message"
+                          placeholder="Enter Description 1..." required formControlName="description1"></textarea>
+                      </fieldset><br>
+                      <div class="validation" *ngIf="RegistrationForm.controls['description1'].hasError('required')
+                      && (RegistrationForm.controls['description1'].touched||RegistrationForm.controls['description1'].dirty)">
+                      <b>This Field is requried</b>
+                  </div>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="1" class="form-control" id="message"
+                          placeholder="Enter Description 2..." required formControlName="description2"></textarea>
+                      </fieldset><br>
+                      <div class="validation" *ngIf="RegistrationForm.controls['description2'].hasError('required')
+                      && (RegistrationForm.controls['description2'].touched||RegistrationForm.controls['description2'].dirty)">
+                      <b>This Field is requried</b>
+                  </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" formControlName="enquiry">
+                        <label class="custom-control-label" for="customCheck" value="Yes">Enquery</label>
                       </div>
                     </div>
-                  </div>
-                </form>
+                    <div class="col-md-12" style="margin-bottom: 10px;">
+                      <fieldset>
+                        <div class="">
+                  <button type="submit" class="btn btn-success" style="margin-left: 37%;" (click)="saveAction(RegistrationForm.value)"><b> SUBMIT</b></button>
+                      </div>
+                      </fieldset>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <!-- <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div> -->
-              <!-- <div class="col-sm-4 col-md-4 col-xs-4"></div> -->
             </div>
-
           </div>
-
         </div>
       </div>
     </div>
-    <table class="table table-hover table-dark  table-striped image mytable"
-      style="margin-top:80px;margin-left:15px;margin-bottom:600px">
-      <tr>
-        <th>Sr.No</th>
-        <th>Tagline</th>
-        <th>Category</th>
-        <th>Project Name</th>
-        <th>Enquiry</th>
-        <th>Description 1</th>
-        <th>Description 2</th>
-        <th>Action</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Test Tagline</td>
-        <td>Residentials</td>
-        <td>Project Name1</td>
-        <td>Yes</td>
-        <td>Test Description 1</td>
-        <td>Test Description 2</td>
-        <td>Edit</td>
-        <td>Delete</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Test Tagline</td>
-        <td>Residentials</td>
-        <td>Project Name1</td>
-        <td>Yes</td>
-        <td>Test Description 1</td>
-        <td>Test Description 2</td>
-        <td>Edit</td>
-        <td>Delete</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Test Tagline</td>
-        <td>Residentials</td>
-        <td>Project Name1</td>
-        <td>Yes</td>
-        <td>Test Description 1</td>
-        <td>Test Description 2</td>
-        <td>Edit</td>
-        <td>Delete</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Test Tagline</td>
-        <td>Residentials</td>
-        <td>Project Name1</td>
-        <td>Yes</td>
-        <td>Test Description 1</td>
-        <td>Test Description 2</td>
-        <td>Edit</td>
-        <td>Delete</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Test Tagline</td>
-        <td>Residentials</td>
-        <td>Project Name1</td>
-        <td>Yes</td>
-        <td>Test Description 1</td>
-        <td>Test Description 2</td>
-        <td>Edit</td>
-        <td>Delete</td>
-      </tr>
-    </table>
+    <div style="margin-left: 16%;">
+      <table class="table table-hover table-dark  table-striped image mytable">
+        <tr>
+          <th >Sr.No</th>
+          <th >Tagline</th>
+          <th>Category</th>
+          <th>Project Name</th>
+          <th>Enquiry</th>
+          <th>Description 1</th>
+          <th>Description 2</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Test Tagline</td>
+          <td>Residentials</td>
+          <td>Project Name1</td>
+          <td>Yes</td>
+          <td>Test Description 1</td>
+          <td>Test Description 2</td>
+          <td> <button type="submit" class="btn btn-warning" style="width: 90px; height: 40px;">Edit</button> </td>
+          <td> <button type="submit" class="btn btn-danger" style="width: 90px; height: 40px;">Delete</button> </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Test Tagline</td>
+          <td>Residentials</td>
+          <td>Project Name1</td>
+          <td>Yes</td>
+          <td>Test Description 1</td>
+          <td>Test Description 2</td>
+          <td> <button type="submit" class="btn btn-warning"style="width: 90px; height: 40px;">Edit</button> </td>
+          <td> <button type="submit" class="btn btn-danger"style="width: 90px; height: 40px;">Delete</button> </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Test Tagline</td>
+          <td>Residentials</td>
+          <td>Project Name1</td>
+          <td>Yes</td>
+          <td>Test Description 1</td>
+          <td>Test Description 2</td>
+          <td> <button type="submit" class="btn btn-warning"style="width: 90px; height: 40px;">Edit</button> </td>
+          <td> <button type="submit" class="btn btn-danger"style="width: 90px; height: 40px;">Delete</button> </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Test Tagline</td>
+          <td>Residentials</td>
+          <td>Project Name1</td>
+          <td>Yes</td>
+          <td>Test Description 1</td>
+          <td>Test Description 2</td>
+          <td> <button type="submit" class="btn btn-warning"style="width: 90px; height: 40px;">Edit</button> </td>
+          <td> <button type="submit" class="btn btn-danger"style="width: 90px; height: 40px;">Delete</button> </td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Test Tagline</td>
+          <td>Residentials</td>
+          <td>Project Name1</td>
+          <td>Yes</td>
+          <td>Test Description 1</td>
+          <td>Test Description 2</td>
+          <td> <button type="submit" class="btn btn-warning"style="width: 90px; height: 40px;">Edit</button> </td>
+          <td> <button type="submit" class="btn btn-danger"style="width: 90px; height: 40px;">Delete</button> </td>
+        </tr>
+      </table>
+    </div> 
   </form>
 
 </div>

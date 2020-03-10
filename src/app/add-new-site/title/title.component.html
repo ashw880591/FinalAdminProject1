@@ -1,0 +1,135 @@
+<div id="what-we-do">
+    <div class="container">
+        <div class="card">
+            <form action="" [formGroup]="ProjectTitle">
+                <div class="card-body">
+                    <div class="row">
+                        <h3>Site Title Details</h3>
+                        <div class="col-sm-4 form-group">
+                            <label for="">Site Name</label>
+                            <input type="text" name="site_name" placeholder="Enter Site Name" class="form-control"
+                                formControlName="site_name">
+                            <div class="validation" *ngIf="ProjectTitle.controls['site_name'].hasError('required')
+                        && (ProjectTitle.controls['site_name'].touched||ProjectTitle.controls['site_name'].dirty)">
+                                <b>This field is requried</b>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="">Project Type</label>
+                            <select class=" form-control" placeholder="Enter Project Type"
+                                formControlName="project_name">
+                                <option value="">Select Project Type</option>
+                                <option value="Project 1">Project 1 </option>
+                                <option value="Project 2">Project 2 </option>
+                                <option value="Project 3">Project 3 </option>
+                                <option value="Project 4">Project 4 </option>
+                            </select>
+
+                            <div class="validation"
+                                *ngIf="ProjectTitle.controls['project_name'].hasError('required')
+                        && (ProjectTitle.controls['project_name'].touched||ProjectTitle.controls['project_name'].dirty)">
+                                <b>This field is requried</b>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <label for="">Site Location</label>
+                            <input type="text" name="site_location" placeholder="Enter Site Location"
+                                class="form-control" formControlName="site_location">
+                            <div class="validation"
+                                *ngIf="ProjectTitle.controls['site_location'].hasError('required')
+                        && (ProjectTitle.controls['site_location'].touched||ProjectTitle.controls['site_location'].dirty)">
+                                <b>This field is requried</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label for="">Site Apartment Types</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input  type="checkbox" name="site_apartment_type" id="site_apartment_type1"
+                                for="site_apartment_type1" value="Single Room"
+                                formControlName="site_apartment_type">&nbsp;Single Room &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type2"
+                                for="site_apartment_type2" value="1 RK">&nbsp;1 RK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type3"
+                                for="site_apartment_type3" value="1 BHK">&nbsp;1 BHK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type4"
+                                for="site_apartment_type4" value="1.5 BHK">&nbsp;1.5 BHK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type5"
+                                for="site_apartment_type5" value="2 BHK">&nbsp;2 BHK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type6"
+                                for="site_apartment_type6" value="2.5 BHK">&nbsp;2.5 BHK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type7"
+                                for="site_apartment_type7" value="3 BHK">&nbsp;3 BHK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type8"
+                                for="site_apartment_type8" value="3.5 BHK">&nbsp;3.5 BHK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type9"
+                                for="site_apartment_type9" value="4 BHK">&nbsp;4 BHK &nbsp;
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input  type="checkbox" name="site_apartment_type" id="site_apartment_type10"
+                                for="site_apartment_type10" value="4.5 BHK">&nbsp;4.5 BHK &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type11"
+                                for="site_apartment_type11" value="Row House">&nbsp;Row House &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type12"
+                                for="site_apartment_type12" value="Bunglow">&nbsp;Bunglow&nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type13"
+                                for="site_apartment_type13" value="Bunglow House">&nbsp;Bunglow House &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type14"
+                                for="site_apartment_type14" value="School">&nbsp;School &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type15"
+                                for="site_apartment_type15" value="Collage">&nbsp;Collage &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type16"
+                                for="site_apartment_type16" value="Hotel">&nbsp;Hotel &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type17"
+                                for="site_apartment_type17" value="Restaurant">&nbsp;Restaurant &nbsp;
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type18"
+                                for="site_apartment_type18" value="Commercial Building">&nbsp;Commercial Building &nbsp;
+
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type19"
+                                for="site_apartment_type19" value="Industrial Project">&nbsp;Industrial Project &nbsp;
+                            <input type="checkbox" name="site_apartment_type" id="site_apartment_type20"
+                                for="site_apartment_type20" value="Company">&nbsp;Company &nbsp;
+                        </div>
+                    </div>
+                    <div class="col-sm-4 form-group">
+                        <label for="">MAHA RERA Reg. No.</label>
+                        <input type="text" name="maha_rera_reg_no" placeholder="Enter MAHA RERA Reg. No."
+                            class="form-control" formControlName="maha_rera_reg_no">
+                        <div class="validation"
+                            *ngIf="ProjectTitle.controls['maha_rera_reg_no'].hasError('required')
+                    && (ProjectTitle.controls['maha_rera_reg_no'].touched||ProjectTitle.controls['maha_rera_reg_no'].dirty)">
+                            <b>This field is requried</b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 form-group"></div>
+                    <div class="col-sm-4 form-group">
+                        <label for="">CREDAI MEMBER Reg. No.</label>
+                        <input type="text" name="siteName" placeholder="Enter CREDAI MEMBER Reg. No."
+                            class="form-control" formControlName="credai_member_reg_no">
+                        <div class="validation"
+                            *ngIf="ProjectTitle.controls['credai_member_reg_no'].hasError('required')
+                    && (ProjectTitle.controls['credai_member_reg_no'].touched||ProjectTitle.controls['credai_member_reg_no'].dirty)">
+                            <b>This field is requried</b>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="">
+                <button type="submit" class="btn btn-success" (click)="saveAction(ProjectTitle.value)"
+                    style="margin-left: 88%;"><b> SAVE & NEXT</b>&nbsp;<i class="fa fa-chevron-right"
+                        aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

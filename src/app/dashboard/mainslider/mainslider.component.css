@@ -1,24 +1,21 @@
 button{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* border-radius: 30px; */
     height: 60px;
-    width: 140px;
-    margin-left:20px ;
+    width: 150px;
 }
 .image{
          
          background-size:cover;
         width:auto;
-        background-image: url('/assets/background.jpg');
+        background-image: url('/assets/img/background.jpg');
          background-position:50% 50%;
 }
-
-
 .image1{
          
     background-size:cover;
    width:auto;
-   background-image: url('/assets/background.jpg');
+   background-image: url('/assets/img/background.jpg');
     background-position:50% 50%;
 }
    
@@ -96,3 +93,7 @@ color:red;
     -moz-box-shadow: -5px 2px 62px 8px rgba(240,231,240,1);
      box-shadow: -5px 2px 62px 8px rgba(240,231,240,1); */
 }
+
+
+
+

@@ -1,0 +1,33 @@
+<div id="what-we-do">
+
+    <div class="container" >
+       <div class="card">
+       <form action="">
+       <div class="row">
+           <h3>Site Floor Plan Details</h3>
+       </div>
+       <div class="row">
+           <div class="col-sm-5">
+               <label for="" class="form-group"> Floor Plan Picture 1</label>
+               <input type="file" (change)="onFileChanged($event)" name="" id="" class="form-group">
+           </div>
+           <div class="col-sm-5">
+               <label for="" class="form-group">Floor Plan Picture 2</label>
+               <input type="file" name="" id="">
+           </div>
+
+       </div>
+
+       <br>
+       <div class="">
+           <button type="submit" class="btn btn-warning" style="margin-left: 0%;"(click)="GoBackToMasterPlanPage()">
+               <i class="fa fa-chevron-left" aria-hidden="true"></i>
+             <b>  PREVIOUS</b></button>
+
+
+                   <button type="submit" class="btn btn-success" style="margin-left: 35%;"(click)="onUpload()" ><b> SAVE & NEXT</b>&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+       </div>
+       </form>
+   </div>
+    </div>
+</div>

@@ -7,12 +7,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
-
 import { MainsliderComponent } from './dashboard/mainslider/mainslider.component';
 import { route } from './route.config';
+import { AddNewSiteComponent } from './add-new-site/add-new-site.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

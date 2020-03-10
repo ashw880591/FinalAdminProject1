@@ -8,24 +8,31 @@ export class MainSliderService {
   constructor(private http: HttpClient) {
   }
 
-
-
   //Service: Insert record to the DB: @RequestMapping(path = "/createBuilder") //
 
-  saveAllUser(data) {
+  saveAllMainSlider(data) {
 
-    let url = ("http://localhost:8082/api/Marne/creatBuilder");
+    let url = ("http://localhost:8082/api/Marne/createMainSlider");
     return this.http.post(url, data);
   }
 
   uploadImages(event) {
     debugger
-    let file =event;
+    let file = event;
 
-    }
+  }
 
   //   getAllBookingById( fkid:any){
   //     let url="http://localhost:8082//api/Marne/getallbuilder"+fkid;
   //     return this.http.post(url,fkid);
   // }
+
+
+
+
+  public getById(id:String){
+    let url="http://localhost:8082/api/Marne/getAllMainSlider/"+id;
+       return this.http.get(url);
+}
+
 }

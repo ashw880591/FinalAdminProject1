@@ -1,0 +1,71 @@
+<div id="what-we-do">
+    <form action="" [formGroup]="ProjectArchitects">
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <h3>Site Architect's Note Details</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="" class="form-group">Architect Name</label>
+                        <input type="text" name="architecture_name" id="architecture_name"
+                            placeholder="Enter Architect Name" class="form-control form-group"
+                            formControlName="architecture_name">
+                        <div class="validation"
+                            *ngIf="ProjectArchitects.controls['architecture_name'].hasError('required')
+                    && (ProjectArchitects.controls['architecture_name'].touched||ProjectArchitects.controls['architecture_name'].dirty)">
+                            <b>This field is requried</b>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="" class="form-group">Photo</label>
+                        <input type="file" name="" id="" placeholder="Enter Architect Name"
+                            class="form-control form-group">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="" class="form-group">Designation</label>
+                        <input type="text" name="designation" id="designation" placeholder="Enter Designation"
+                            class="form-control form-group" formControlName="designation">
+                        <div class="validation"
+                            *ngIf="ProjectArchitects.controls['designation'].hasError('required')
+                    && (ProjectArchitects.controls['designation'].touched||ProjectArchitects.controls['designation'].dirty)">
+                            <b>This field is requried</b>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="" class="form-group">Description</label>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 20px;">
+                        <fieldset>
+                            <textarea name="message" rows="4" class="form-control" id="message" required
+                                formControlName="description"></textarea>
+                        </fieldset><br>
+                        <div class="validation"
+                            *ngIf="ProjectArchitects.controls['description'].hasError('required')
+                    && (ProjectArchitects.controls['description'].touched||ProjectArchitects.controls['description'].dirty)">
+                            <b>This Field is requried</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <button type="submit" class="btn btn-warning" style="margin-left: 1%;"
+                        (click)="GoBackToOverviewPage()">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <b> PREVIOUS</b></button>
+
+                    <button type="submit" class="btn btn-success" style="margin-left: 77%;"
+                        (click)="saveAction(ProjectArchitects.value)"><b> SAVE & NEXT</b>&nbsp;<i
+                            class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
